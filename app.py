@@ -11,6 +11,7 @@ import streamlit as st
 import plotly.express as px
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
+import os
 
 # -----------------------------
 # Page & Theme
@@ -43,8 +44,10 @@ CLASS_COLORS = {
 # -----------------------------
 # Settings (hardcoded paths)
 # -----------------------------
-MODEL_PATH = r"C:\Users\ukasy\project_DL\project sederhana\Tugas_MBC_5\Deploy Analisis Tomlembong\model_LR.pkl"
-VECTORIZER_PATH = r"C:\Users\ukasy\project_DL\project sederhana\Tugas_MBC_5\Deploy Analisis Tomlembong\tfidf_vectorizer.pkl"
+
+BASE_DIR = os.path.dirname(__file__)
+MODEL_PATH = os.path.join(BASE_DIR, "model_LR.pkl")
+VECTORIZER_PATH = os.path.join(BASE_DIR, "tfidf_vectorizer.pkl")
 PROB_DECIMALS = 3
 CONF_THRESHOLD = 0.0
 
