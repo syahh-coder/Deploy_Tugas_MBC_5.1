@@ -1,8 +1,8 @@
-pandas==2.2.2
-numpy==1.26.1
-scikit-learn==1.5.1
-streamlit==1.44.1
-plotly==6.3.0
-joblib==1.4.2
-tensorflow==2.16.0
-Pillow==10.1.0
+pandas
+numpy
+scikit-learn
+streamlit
+plotly
+joblib
+Pillow
+
